@@ -1,4 +1,4 @@
-# Qwen3-TTS Voice Cloning — 本地声音克隆 + 英语口语练习
+# Qwen3-TTS Voice Cloning SKILL— AGENT自动本地声音克隆skill
 
 基于 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 的本地声音克隆方案。用一段 10-15 秒的录音克隆你的声音，然后让 AI 用你的声音朗读任意文本
 
