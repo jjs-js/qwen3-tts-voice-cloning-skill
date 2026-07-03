@@ -1,6 +1,6 @@
 # Qwen3-TTS Voice Cloning — 本地声音克隆 + 英语口语练习
 
-基于 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 的本地声音克隆方案。用一段 10-15 秒的录音克隆你的声音，然后让 AI 用你的声音朗读任意英文文本——包括故意拼错的单词，用来练习英语发音纠错。
+基于 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 的本地声音克隆方案。用一段 10-15 秒的录音克隆你的声音，然后让 AI 用你的声音朗读任意文本
 
 ## 效果对比（RTX 4060 8GB）
 
@@ -73,16 +73,7 @@ sf.write("output.wav", wavs[0], sr)
 | 12 GB | 30s | 1.7B |
 | 16+ GB | 60s | 1.7B |
 
-## 英语口语练习技巧
 
-故意拼错单词，TTS 会按拼写读出来，自然产生"读音不准"的效果：
-
-```python
-# 原文: strategic decisions across all levels
-# 改后: strateegic deecisions acroos all levels
-```
-
-适合做英语发音纠错作业。
 
 ## 项目结构
 
@@ -90,7 +81,7 @@ sf.write("output.wav", wavs[0], sr)
 ├── batch_clone.py              # 批量生成脚本
 ├── models/
 │   └── Qwen3-TTS-12Hz-1.7B-Base/  # 模型权重（需下载）
-└── .reasonix/skills/qwen3-tts-voice-cloning/  # AI Skill
+└── skills/qwen3-tts-voice-cloning-skill/  # AI Skill
     ├── SKILL.md                # 安装 + 评估 + 推荐
     └── benchmarks.md           # 实测数据
 ```
